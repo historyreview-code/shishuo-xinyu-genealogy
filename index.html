@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>世说新语 · 魏晋风流人物谱系图</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <svg id="board" xmlns="http://www.w3.org/2000/svg"></svg>
+  <div id="card"></div>
+  <div id="hint">滚轮缩放 · 拖拽平移 · 点击人物看小传 · <a href="landscape.html">横版</a></div>
+  <button id="themeToggle">深色</button>
+</div>
+<script src="data.js"></script>
+<script src="renderer.js"></script>
+<script>
+  if (location.search.includes("print")) document.body.classList.add("print");
+  initShishuo("portrait");
+</script>
+</body>
+</html>
